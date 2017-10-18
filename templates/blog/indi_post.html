@@ -1,0 +1,205 @@
+{% load staticfiles %}
+<html>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/blog/favicon.ico"/>
+    <style>
+        #header {
+            color: #ffffff;
+            font-size: 100px;
+            font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+            padding-left: 15px;
+            padding-top: 0px;
+
+            text-align: center;
+
+        }
+
+        #border {
+
+            border-bottom: 2px solid lightgrey;
+
+            padding: 15px;
+
+        }
+
+        #post {
+
+        }
+
+        #border {
+
+            border-bottom: 2px solid lightgrey;
+
+            padding: 15px;
+
+        }
+
+        #name {
+            font-family: Andalus;
+            font-size: 15px;
+            color: white;
+
+        }
+
+        .testfont {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        #date {
+
+            font-size: 15px;
+            padding-left: 15px;
+            font-family: David;
+        }
+
+        #text {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 15px;
+            padding-left: 15px;
+            line-height: 1.8;
+        }
+
+        #btitle {
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 15px;
+            font-weight: bold;
+
+        }
+
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+            background-color: #1b1e26;
+        }
+
+        #body {
+background-color: #1b1e26;
+        }
+
+        .navbar-default {
+            font: 20px Montserrat, sans-serif;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar {
+            font: 20px Montserrat, sans-serif;
+            font-weight: bold;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #bc873e!important;
+        }
+    </style>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Raju Koushik</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#about">ABOUT ME</a></li>
+                    <li><a href="/projects/">PROJECTS</a></li>
+                    <li><a href="http://docdro.id/eXG8n3q">RESUME</a></li>
+                    <li><a href="https://github.com/RajuKoushik">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <title>Projects</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+</head>
+<body id="body">
+
+
+<br>
+
+
+    <div class="container" style="max-width: 800px; margin : 0 auto;">
+    <div class="jumbotron">
+        <div id="project">
+            <h2 id="btitle"><a href="#" style="color:#bc873e "><center><strong>{{ post.title}}</strong><center></a></h2>
+            <p id="date"><center>{{ post.published_date }}</center></p>
+        </div>
+        <p id="text">{{ post.text|linebreaksbr }}</p>
+    </div>
+    </div>
+
+
+
+
+
+
+<div id="disqus_thread" class="container"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = 'http://infisoul.com/{{ post.id }}/';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = post.id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-infisoul-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//http-infisoul-com.disqus.com/count.js" async></script>
+
+<hr color="green" width="100%">
+</body>
+
+
+<footer class="container" style="color:#ffffff " >
+  <center><p>Copyright © 2017 Raju Koushik</p>
+  <p>Contact Information: <a href="mailto:g.rajukoushik@gmail.com">g.rajukoushik@gmail.com</a>.</p></center>
+</footer>
+
+
+</html>
