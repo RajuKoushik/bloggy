@@ -18,6 +18,18 @@ class Post(models.Model):
         return self.title
 
 
+class Tag(models.Model):
+    tag_name = models.CharField(max_length=200)
+    tag_text = models.CharField(max_length=2000)
 
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.tag_name
 
 
