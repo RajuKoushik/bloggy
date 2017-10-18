@@ -4,7 +4,7 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.template import RequestContext, loader
 
 from django.shortcuts import get_object_or_404, render
-from .models import Post
+from .models import Post, Tag
 
 
 def post_list(request):
@@ -21,6 +21,9 @@ def indi_post(request, post_id):
     return render(request, 'blog/indi_post.html', {'post': post})
 
 
+def tag_list(request):
+    projects = Tag.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/tag_list.html', {'projects': projects})
 
 
 def home(request):
@@ -28,5 +31,4 @@ def home(request):
     return render(request, 'blog/home.html', {'posts': posts, 'req': request})
 
 
-def portfolio(request):
-    return render(request, 'blog/portfolio.html')
+
