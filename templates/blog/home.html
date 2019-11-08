@@ -4,38 +4,39 @@
 
 <!-- Google Analytics -->
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-92866897-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-92866897-1', 'auto');
+  ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 
 
 <script>
-    $(document).ready(function () {
-        $("#upvoteIcon").click(function () {
-            $("fa-thumbs-up").toggleClass("fa-thumbs-o-up");
-        });
+  $(document).ready(function () {
+    $("#upvoteIcon").click(function () {
+      $("fa-thumbs-up").toggleClass("fa-thumbs-o-up");
     });
+  });
 </script>
+
 <head>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-  <link rel="shortcut icon" type="image/x-icon" href="../../static/blog/favicon.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" href="../../static/blog/favicon.ico" />
 
   <script src="jquery-3.1.1.min.js"></script>
   <link href="css/hover.css" rel="stylesheet" media="all">
@@ -68,8 +69,7 @@
       padding: 15px;
     }
 
-    #post {
-    }
+    #post {}
 
     #name {
       font-family: Andalus;
@@ -134,13 +134,17 @@
     }
 
     .social-icon a {
-      background: rgba(255, 255, 255, 0.85); /* social icon background color */
-      color: #000; /* social icon color */
+      background: rgba(255, 255, 255, 0.85);
+      /* social icon background color */
+      color: #000;
+      /* social icon color */
     }
 
     .social-icon a:hover {
-      background: rgba(255, 255, 255, 0.25); /* social icon hover background color */
-      color: #fff; /* social icon hover color */
+      background: rgba(255, 255, 255, 0.25);
+      /* social icon hover background color */
+      color: #fff;
+      /* social icon hover color */
     }
 
     .footer {
@@ -168,11 +172,15 @@
       margin-right: 145px;
     }
 
-    {% load static %}
+      {
+      % load static %
+    }
+
     .bg-1 {
       background: url("{% static "blog/super.jpg" %}") no-repeat center center fixed;
       background-attachment: fixed;
-      background-color: #000000; /* Green */
+      background-color: #000000;
+      /* Green */
       color: #ffffff;
       justify-content: center;
       align-items: center;
@@ -198,17 +206,20 @@
     }
 
     .bg-2 {
-      background-color: #1b1e26; /* WHite */
+      background-color: #1b1e26;
+      /* WHite */
       color: #555555;
     }
 
     .bg-3 {
-      background-color: #ffffff; /* White */
+      background-color: #ffffff;
+      /* White */
       color: #555555;
     }
 
     .bg-4 {
-      background-color: #bc873e; /* Black Gray */
+      background-color: #bc873e;
+      /* Black Gray */
       color: #fff;
     }
 
@@ -249,7 +260,9 @@
       width: 22px;
       height: 2px;
       border-radius: 1px;
-      background-color: #ddd /* change this to any color you want! */;
+      background-color: #ddd
+        /* change this to any color you want! */
+      ;
     }
 
     .navbar-header button:hover {
@@ -311,112 +324,112 @@
     }
   </style>
 </head>
+
 <body>
 
 
-<!-- First Container -->
-{% load static %}
-<div class="container-fluid bg-1 text-center">
+  <!-- First Container -->
+  {% load static %}
+  <div class="container-fluid bg-1 text-center">
 
-  <!-- Navbar -->
-  <nav class="pad-remove navbar ">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#" style="color:#ffffff">Raju Koushik</a>
+    <!-- Navbar -->
+    <nav class="pad-remove navbar ">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="color:#ffffff">Raju Koushik</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about " style="color:#ffffff">ABOUT ME</a></li>
+            <li><a href="/projects/" style="color:#ffffff ">PROJECTS</a></li>
+            <li><a href="http://docdro.id/eXG8n3q" style="color:#ffffff ">RESUME</a></li>
+            <li><a href="https://github.com/RajuKoushik" style="color:#ffffff ">GITHUB</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about " style="color:#ffffff">ABOUT ME</a></li>
-          <li><a href="/projects/" style="color:#ffffff ">PROJECTS</a></li>
-          <li><a href="http://docdro.id/eXG8n3q" style="color:#ffffff ">RESUME</a></li>
-          <li><a href="https://github.com/RajuKoushik" style="color:#ffffff ">GITHUB</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <h1 style="font-size:65px; margin-top: 50px;" class="detail hvr-float">Koushik's <span class="name">Blog</span></h1>
+    </nav>
+    <h1 style="font-size:65px; margin-top: 50px;" class="detail hvr-float">Koushik's <span class="name">Blog</span></h1>
 
 
-  <p class="container-fluid pos testfont" style="font-size:30px"> A coding enthusiast and a writer. Would love to
-    contribute to the world and make this world a better place.
-  </p>
+    <p class="container-fluid pos testfont" style="font-size:30px"> A coding enthusiast and a writer. Would love to
+      contribute to the world and make this world a better place.
+    </p>
 
-  <h3 class="hvr-float">Google Summer of Code Intern 2017 at AboutCode</h3><br>
-  <img style="height: 100px;" src="{% static "blog/dashinfinity.gif" %}">
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center ">
-
-  <div class="container" style="max-width: 800px; margin : 0 auto;">
-    <div class="jumbotron">
-      <div id="about">
-        <h2 id="btitle" class="hvr-float"><a href="{{ post.id }}" style="color:#bc873e "><strong>About
-          Me</strong></a></h2>
-        <p id="date" style="color:#4C4C4C ">Raju Koushik Gorantla</p>
-      </div>
-      <p align="left" id="text">Raju Koushik is an undergraduate from the Indian Institute of Information
-        Technology, Vadodara, India pursuing Information Technology. Google Summer of Code Intern 2017. A
-        hacker, coding enthusiast and a writer. A
-        software developer building servers on Django and Flask and an entrepreneur working on his own startup
-        Travel Diaries. An avid open source contributor lately working on Machine Learning and Information
-        Retrieval. Former Software Engineer Intern at Invoxel Technologies Lmt and Curo Health Care Lmt. You can
-        find him writing, reading or playing table tennis during his leisure time.
-
-      </p>
-    </div>
+    <h3 class="hvr-float">Google Summer of Code Intern 2017 at AboutCode</h3><br>
+    <img style="height: 100px;" src="{% static "blog/dashinfinity.gif" %}">
   </div>
 
-  {% for post in posts %}
+  <!-- Second Container -->
+  <div class="container-fluid bg-2 text-center ">
+
+    <div class="container" style="max-width: 800px; margin : 0 auto;">
+      <div class="jumbotron">
+        <div id="about">
+          <h2 id="btitle" class="hvr-float"><a href="{{ post.id }}" style="color:#bc873e "><strong>About
+                Me</strong></a></h2>
+          <p id="date" style="color:#4C4C4C ">Raju Koushik Gorantla</p>
+        </div>
+        <p align="left" id="text">Raju Koushik is an undergraduate from the Indian Institute of Information
+          Technology, Vadodara, India pursuing Information Technology. Google Summer of Code Intern 2017. A
+          hacker, coding enthusiast and a writer. A
+          software developer building servers on Django and Flask and an entrepreneur working on his own startup
+          Travel Diaries. An avid open source contributor lately working on Machine Learning and Information
+          Retrieval. Former Software Engineer Intern at Invoxel Technologies Lmt and Curo Health Care Lmt. You can
+          find him writing, reading or playing table tennis during his leisure time.
+
+        </p>
+      </div>
+    </div>
+
+    {% for post in posts %}
 
     <div class="container" style="max-width: 800px; margin : 0 auto;">
       <div class="jumbotron">
         <h2 id="btitle" class="hvr-float"><a href="{{ post.id }} "
-                                             style="color:#bc873e "><strong>{{ post.title }}</strong></a></h2>
+            style="color:#bc873e "><strong>{{ post.title }}</strong></a></h2>
         <p id="date">{{ post.published_date }}</p>
 
 
         <p align="left" id="text">{{ post.text|linebreaksbr|truncatechars:300 }}</p>
 
-        <h4 id="btitle" class="hvr-float"><a href="{{ post.id }} "
-                                             style="color:#bc873e "><strong>More</strong></a></h4>
+        <h4 id="btitle" class="hvr-float"><a href="{{ post.id }} " style="color:#bc873e "><strong>More</strong></a></h4>
         <hr color="green" width="100%">
         <i class="fa fa-thumbs-up" aria-hidden="true" id="upvoteIcon"></i>
 
         <a href="https://www.facebook.com/sharer/sharer.php?u=http://infisoul.com/{{ post.id }}"
-           class="fa fa-facebook"></a>
+          class="fa fa-facebook"></a>
         <a href="https://twitter.com/home?status={{ post.title|urlencode }} http://infisoul.com/{{ post.id }}"
-           class="fa fa-twitter"></a>
+          class="fa fa-twitter"></a>
         <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post.title|urlencode }}&source=http://infisoul.com/{{ post.id }}"
-           class="fa fa-linkedin"></a>
+          class="fa fa-linkedin"></a>
         <a href="https://plus.google.com/share?url=http://infisoul.com/{{ post.id }}" class="fa fa-google"></a>
 
       </div>
     </div>
 
-  {% endfor %}
-</div>
-
-<!-- Third Container (Grid) -->
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <div class="container">
-    <ul class="social-icon animate pull-right">
-      <li><a href="https://www.facebook.com/g.rajukoushik" title="facebook" target="_blank"><i
-          class="fa fa-facebook"></i></a></li> <!-- change the link to social page and edit title-->
-      <li><a href="https://twitter.com/132ed143fb374f7" title="twitter" target="_blank"><i
-          class="fa fa-twitter"></i></a></li>
-      <li><a href="https://plus.google.com/u/0/104727747464105030726" title="google plus" target="_blank"><i
-          class="fa fa-google-plus"></i></a></li>
-    </ul>
+    {% endfor %}
   </div>
-</footer>
+
+  <!-- Third Container (Grid) -->
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    <div class="container">
+      <ul class="social-icon animate pull-right">
+        <li><a href="https://www.facebook.com/g.rajukoushik" title="facebook" target="_blank"><i
+              class="fa fa-facebook"></i></a></li> <!-- change the link to social page and edit title-->
+        <li><a href="https://twitter.com/132ed143fb374f7" title="twitter" target="_blank"><i
+              class="fa fa-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/u/0/104727747464105030726" title="google plus" target="_blank"><i
+              class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
